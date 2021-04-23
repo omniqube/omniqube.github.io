@@ -4,30 +4,89 @@
 <title>OmniQube</title>
 <link rel="icon" type="image/png" href="img/logo.png"/>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
+<style>
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: left;
+  transition: all 0.5s;
+  background-color: black
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 50px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  padding-right: 30px;
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover {
+  background-color: #585858; /* Green */
+  color: white;
+} 
+
+</style>
+<a href="index.html" class="button" style="vertical-align:middle"><span>Back </span></a>
+</br>
 </head>
 <body>
+<div style="padding:10px;margin-top:30px;">
+</br>
+<div><img src="img/cover.png" alt="OmniQube" width="1000"></div>
 
-<div class="header"><img src="img/logotext.png" alt="OmniQube" width="450" height="100"></div>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Games</a>
-    <div class="dropdown-content">
-	  <a href="games\warpoint.html">Warpoint</a>
-      <a href="games\stonks.html">STONKS</a>
-      <a href="https://undertaleorange.github.io/webpage/">Undertale: Orange</a>
-    </div>
-  </li>
-  <li><a href="about.html">About</a></li>
-</ul>
-<div style="padding:20px;margin-top:30px;">
 
+<section>
 <p>We are a small indie development studio based in Košice, Slovakia.</p>
 <p>Founded in 2014, we're currently working on game development technologies.</p>
-
-<div><img src="img/aboutq.png" alt="OmniQube" width="900" height="400"></div>
+</section>
+<hr class="solid">
+<section>
+<h2>The OmniQube Team</h2>
+<h3>Development</h3>
+<p>Frederik Tóth</p>
+<p>Marek Fekete</p>
+<p>Matej Misál</p>
+<p>Matej Šlachta</p>
+<h3>Non-Development</h3>
+<p>Ladislav Takács</p>
+<p>Oliver Poliačik</p>
+<p>Lukáš Bašista</p>
+<p>Samuel Bujňák</p>
+</section>
+<hr class="solid">
+<section>
 <p>Visit our <a href="https://www.youtube.com/channel/UCkmicoTjX7GG7ZT0D9IaKrw">YouTube Channel</a></p>
 <p>Contact Us - omniqubesoftware@gmail.com</p>
+</section>
+
 <footer>
   <p>© 2014-<script>document.write( new Date().getFullYear());</script> OmniQube</p>
 </footer>

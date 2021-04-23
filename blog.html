@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OmniQube</title>
+<link rel="icon" type="image/png" href="img/logo.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: left;
+  transition: all 0.5s;
+  background-color: black
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 50px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 0px;
+}
+
+.button:hover span:after {
+  padding-right: 0px;
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover {
+  background-color: #585858; /* Green */
+  color: white;
+} 
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: black;
+  color: gray
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #434343;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #000000;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+<a href="index.html" class="button" style="vertical-align:middle"><span>Back </span></a>
+</br>
+</head>
+<body>
+
+<div class="header">
+</br>
+<div><img src="img/logo.png" alt="OmniQube" width="200";></div>
+  <h2>The OmniQube Developer Blog</h2>
+</div>
+
+<div class="content">
+
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2>New Site Redesign and Blog Launch</h2>
+      <h5>OmniQube, 23/04/2021</h5>
+      <div><img src="img/logosquare.png" alt="OmniQube" width="200";></div>
+      <p>Welcome to the new and redesigned OmniQube site.</p>
+	  <p>We've just launched our on-site blog and will update it with news and information regarding OmniQube and our current projects. Stay tuned for more!</p>
+    </div>
+  </div>
+  
+  <div class="rightcolumn">
+  </div>
+  
+</div>
+
+</div>
+
+<footer>
+  <p align="center" style="color: gray;">© 2014-<script>document.write( new Date().getFullYear());</script> OmniQube</p>
+</footer>
+</body>
+</html>

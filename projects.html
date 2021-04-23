@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OmniQube</title>
+<link rel="icon" type="image/png" href="img/logo.png"/>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<style>
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: left;
+  transition: all 0.5s;
+  background-color: black
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 50px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  padding-right: 30px;
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover {
+  background-color: #585858;
+  color: white;
+} 
+
+
+hr.solid {
+  border-top: 1px solid #424242;
+}
+
+</style>
+<a href="index.html" class="button" style="vertical-align:middle"><span>Back </span></a>
+</br>
+</head>
+<body>
+<div style="padding:10px;margin-top:30px;">
+</br>
+<div><img src="img/logo.png" alt="OmniQube" width="200"></div>
+<hr type="solid">
+<h1>Our Flagships</h1>
+
+<button onclick="location.href='games/warpoint.html'" type = "submit" name = "learn" value = "myimage" style="background-color: #363636;">
+   <h3 style="color: white;">Warpoint</h3>
+   <img src="img/games/warpoint/warpointcover.png" height="250">
+</button>
+
+</br><hr type="solid"><h2>The OmniQube Legacy</h2>
+
+<button onclick="location.href='games/uto.html'" type = "submit" name = "learn" value = "myimage" style="background-color: #363636;">
+   <h3 style="color: white;">Undertale: Orange</h3>
+   <img src="img/games/uto/logosplash.png" height="250">
+</button>
+<button onclick="location.href='games/stonks.html'" type = "submit" name = "learn" value = "myimage" style="background-color: #363636;">
+   <h3 style="color: white;">Stonks</h3>
+   <img src="img/games/stonks/logomap.png" height="250">
+</button>
+
+
+<div class="clearfix"></div>
+</br>
+<footer>
+  <p>© 2014-<script>document.write( new Date().getFullYear());</script> OmniQube</p>
+</footer>
+
+</body>
+</html>
